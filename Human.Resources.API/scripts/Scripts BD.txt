@@ -1,0 +1,28 @@
+CREATE DATABASE Human_Resources
+USE Human_Resources
+
+CREATE TABLE Worker
+   (
+      Id int IDENTITY(1,1) PRIMARY KEY,
+      WorkerName varchar(20),
+      WorkerLastName varchar(20),
+	  Email varchar(50),
+	  PhoneNumber varchar(20),
+	  WorkerStatus bit
+   )
+
+CREATE TABLE WorkerTitle
+   (
+      Id int IDENTITY(1,1),
+      WorkerId int FOREIGN KEY REFERENCES [Worker] ([Id]),
+      WorkerTitleName varchar(50),
+	  DateIn Date,
+	  DateOut Date,
+	  Reasson varchar(100)
+   )
+
+
+//Querys de ejemplo para insercion de datos
+
+INSERT INTO Worker VALUES('Walter', 'Misas', 'waltermisas@gmail.com', '+573056549876', 1)
+INSERT INTO WorkerTitle  VALUES(@WorkerId , 'Desarrollador BackEnd .Net', '2022-07-21', null, null)
