@@ -5,7 +5,7 @@
 ### Infomacion General
 ***
 API creada para la gestion de empleados por parte del personal de recursos humanos
-###Tecnologias
+### Tecnologias
 ***
 Lista de tecnologías utilizadas en el proyecto:
 * [ASP.NET Core]: Version 6
