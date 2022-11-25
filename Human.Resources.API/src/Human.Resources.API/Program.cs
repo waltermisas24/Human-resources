@@ -14,6 +14,8 @@ builder.Services.AddTransient<IWorkerServices, WorkerServices>();
 //Repositories
 builder.Services.AddTransient<IWorkerRepository, WorkerRepository>();
 builder.Services.AddTransient<IWorkerTitleRepository, WorkerTitleRepository>();
+builder.Services.AddTransient<ILoginServices, LoginServices>();
+builder.Services.AddTransient<ILoginRepository, LoginRepository>();
 
 // Add services to the container.
 

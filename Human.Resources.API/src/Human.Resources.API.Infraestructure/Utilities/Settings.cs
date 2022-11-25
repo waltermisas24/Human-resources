@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Driver;
 
 namespace Human.Resources.API.Infraestructure.Utilities
 {
     public class Settings
     {
         public SqlSettings SqlSettings { get; set; }
+        public MongoSettings MongoDBSetting { get; set; }
     }
 }

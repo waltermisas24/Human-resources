@@ -21,7 +21,7 @@ namespace Human.Resources.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(string id)
         {
             try
             {
@@ -69,34 +69,7 @@ namespace Human.Resources.API.Controllers
                 return ErrorResponse(500, ex.Message);
             }
         }
-
-        [HttpGet]
-        [Route("Active")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetActives()
-        {
-            try
-            {
-                var worker = await _workerServices.GetActives();
-
-                if (worker != null)
-                {
-                    var workers = WorkerMapper.MapWorkerEntityToDTO(worker);
-                    return new OkObjectResult(workers);
-                }
-                else
-                {
-                    return new NoContentResult();
-                }
-            }
-            catch (Exception ex)
-            {
-                return ErrorResponse(500, ex.Message);
-            }
-        }
-
+        
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -106,7 +79,7 @@ namespace Human.Resources.API.Controllers
             try
             {
                 WorkerEntity worker = await _workerServices.Income(WorkerMapper.MapWorkerDtoToEntity(workerDTO));
-                
+
                 if (worker != null)
                 {
                     WorkerDTO workerData = WorkerMapper.MapWorkerEntityToDTO(worker);
@@ -128,7 +101,7 @@ namespace Human.Resources.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Delete(int id, WorkerFiredDTO workerFiredDTO)
+        public async Task<IActionResult> Delete(string id, WorkerFiredDTO workerFiredDTO)
         {
             try
             {

@@ -1,16 +1,11 @@
-﻿using Human.Resources.API.Domain.Entities;
+﻿using Dapper;
+using Human.Resources.API.Domain.Entities;
 using Human.Resources.API.Domain.Interfaces;
 using Human.Resources.API.Infraestructure.Entities;
-using Human.Resources.API.Infraestructure.Utilities;
 using Human.Resources.API.Infraestructure.Mapper;
+using Human.Resources.API.Infraestructure.Utilities;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
 
 namespace Human.Resources.API.Infraestructure.Repositories
 {
@@ -21,7 +16,7 @@ namespace Human.Resources.API.Infraestructure.Repositories
         {
             _sqlSettings = settings.Value.SqlSettings;
         }
-                
+
         public async Task<bool> Insert(WorkerEntity workerEntity)
         {
             WorkerData workerData = WorkerTitleMapper.MapEntityToData(workerEntity);
@@ -40,9 +35,9 @@ namespace Human.Resources.API.Infraestructure.Repositories
         public async Task<bool> Delete(int id, WorkerFiredEntity workerFireEntity)
         {
             string query = "UPDATE WorkerTitle ";
-                  query += "SET DateOut = '" + workerFireEntity.DateOut + "', ";
-                  query += "Reasson = '" + workerFireEntity.ReasonOut + "' ";
-                  query += "WHERE WorkerId = " + id;
+            query += "SET DateOut = '" + workerFireEntity.DateOut + "', ";
+            query += "Reasson = '" + workerFireEntity.ReasonOut + "' ";
+            query += "WHERE WorkerId = " + id;
 
             using (var connection = new SqlConnection(this._sqlSettings.ConnectionStrings))
             {

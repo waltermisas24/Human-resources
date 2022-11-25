@@ -1,10 +1,5 @@
 ﻿using Human.Resources.API.Domain.Entities;
 using Human.Resources.API.Infraestructure.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Human.Resources.API.Infraestructure.Mapper
 {
@@ -14,7 +9,7 @@ namespace Human.Resources.API.Infraestructure.Mapper
         {
             WorkerData workerData = new WorkerData();
 
-            workerData.WorkerId = workerEntity.Id;
+            workerData.WorkerId = workerEntity.Id.ToString();
             workerData.WorkerTitleName = workerEntity.WorkTitleInfo.WorkTitle;
             workerData.DateIn = workerEntity.WorkTitleInfo.DateIn;
             workerData.DateOut = workerEntity.WorkTitleInfo.DateOut;

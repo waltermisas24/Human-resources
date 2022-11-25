@@ -22,3 +22,15 @@ C:\Users\walter.misas\source\repos\Human.Resources.API\src\Human.Resources.API.D
 C:\Users\walter.misas\source\repos\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\refint\Human.Resources.API.Domain.dll
 C:\Users\walter.misas\source\repos\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.pdb
 C:\Users\walter.misas\source\repos\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\ref\Human.Resources.API.Domain.dll
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\bin\Debug\net6.0\Human.Resources.API.Domain.deps.json
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\bin\Debug\net6.0\Human.Resources.API.Domain.dll
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\bin\Debug\net6.0\Human.Resources.API.Domain.pdb
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.csproj.AssemblyReference.cache
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.AssemblyInfoInputs.cache
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.AssemblyInfo.cs
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.csproj.CoreCompileInputs.cache
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.dll
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\refint\Human.Resources.API.Domain.dll
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\Human.Resources.API.Domain.pdb
+D:\Proyectos\Personales\Human-resources\Human.Resources.API\src\Human.Resources.API.Domain\obj\Debug\net6.0\ref\Human.Resources.API.Domain.dll

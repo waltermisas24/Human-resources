@@ -38,7 +38,7 @@ namespace Human.Resources.API.Mapper
                 PhoneNumber = workerEntity.PhoneNumber,
                 WorkerStatus = workerEntity.WorkerStatus,
                 WorkTitle = workerEntity.WorkTitleInfo.WorkTitle,
-                DateIn = workerEntity.WorkTitleInfo.DateIn, 
+                DateIn = workerEntity.WorkTitleInfo.DateIn,
                 DateOut = workerEntity.WorkTitleInfo.DateOut,
                 ReasonOut = workerEntity.WorkTitleInfo.Reason
             };
@@ -48,7 +48,8 @@ namespace Human.Resources.API.Mapper
 
         public static WorkerFiredEntity workerFiredDTOToEntity(WorkerFiredDTO workerFiredDTO)
         {
-            WorkerFiredEntity workerFiredEntity = new WorkerFiredEntity() { 
+            WorkerFiredEntity workerFiredEntity = new WorkerFiredEntity()
+            {
                 DateOut = workerFiredDTO.DateOut,
                 ReasonOut = workerFiredDTO.ReasonOut
             };
@@ -79,6 +80,17 @@ namespace Human.Resources.API.Mapper
             }
 
             return workerDTOs;
+        }
+
+        public static UserEntity UserDTOToEntity(string userName, string password)
+        {
+            UserEntity UserEntity = new UserEntity()
+            {
+                User = userName,
+                Password = password
+            };
+
+            return UserEntity;
         }
     }
 }

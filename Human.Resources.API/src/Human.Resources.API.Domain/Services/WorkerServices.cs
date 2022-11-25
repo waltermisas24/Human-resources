@@ -27,7 +27,7 @@ namespace Human.Resources.API.Domain.Services
             return worker;
         }
 
-        public Task<WorkerEntity> GetById(int IdWorker)
+        public Task<WorkerEntity> GetById(string IdWorker)
         {
             var worker = _workerRepository.GetById(IdWorker);
 
@@ -40,15 +40,12 @@ namespace Human.Resources.API.Domain.Services
             workerEntity.WorkTitleInfo.Reason = null;
 
             await _workerRepository.Insert(workerEntity);
-            await _workerTitleRepository.Insert(workerEntity);
 
             return workerEntity;
         }
-        public async Task<bool> Fired(int id, WorkerFiredEntity workerFireEntity)
+        public async Task<bool> Fired(string id, WorkerFiredEntity workerFireEntity)
         {
             await _workerRepository.Delete(id);
-
-            await _workerTitleRepository.Delete(id, workerFireEntity);
 
             return true;
         }

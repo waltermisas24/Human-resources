@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2NDpwKn6fdTv2DGGZLcXd9dlr1R0zIJfFItRwIY7glrqzpTkIWML0wrtBYpq4e/jyple/4Jfuw4NQZOsLZ1IjQ==",
+  "dgSpecHash": "mHbO6IgZA8TTFhXyeEBUtSuhUCz4/k5zLEM3rGKYewPDGc27tZRObJtE/6vcZEcUn9iPRorR3LxUl06nZ+MZXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\walter.misas\\source\\repos\\Human.Resources.API\\src\\Human.Resources.API.Domain\\Human.Resources.API.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Proyectos\\Personales\\Human-resources\\Human.Resources.API\\src\\Human.Resources.API.Domain\\Human.Resources.API.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\walter.misas\\.nuget\\packages\\mongodb.bson\\2.18.0\\mongodb.bson.2.18.0.nupkg.sha512",
+    "C:\\Users\\walter.misas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

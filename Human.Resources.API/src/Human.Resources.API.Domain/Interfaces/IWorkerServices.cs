@@ -6,8 +6,8 @@ namespace Human.Resources.API.Domain.Interfaces
     {
         Task<List<WorkerEntity>> GetAll();
         Task<List<WorkerEntity>> GetActives();
-        Task<WorkerEntity> GetById(int IdWorker);
+        Task<WorkerEntity> GetById(string IdWorker);
         Task<WorkerEntity> Income(WorkerEntity workerEntity);
-        Task<bool> Fired(int id, WorkerFiredEntity workerFireEntity);
+        Task<bool> Fired(string id, WorkerFiredEntity workerFireEntity);
     }
 }
